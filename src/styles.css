@@ -3,3 +3,30 @@
 
 /* The deliberately simple notice cards only display receipt metadata; they do not implement an ownership-claim workflow. */
 .handover-note{font-size:10px;line-height:1.45;color:#746e61;margin:2px 0 10px;padding-top:4px;}
+
+/* ---- UX rescue additions ---- */
+/* Readability: raise the smallest text sizes on cards and filters. */
+.sticky p{font-size:12px;color:#6f685d}.sticky-top{font-size:10px}.sticky-bottom{font-size:11px;color:#7d6f57}.column-head small{font-size:11px}.filterbox label{font-size:12px}.filterbox input,.filterbox select{font-size:13px}.message{font-size:13px;align-items:center;gap:12px}
+.header-links button{padding:6px 2px;border-bottom:2px solid transparent}.header-links button.active{border-bottom-color:#262c30;color:#262c30}
+.filterbox label.check{flex-direction:row;align-items:center;gap:8px;font-weight:600;cursor:pointer}.filterbox label.check input{width:16px;height:16px;margin:0}
+.filter-summary{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#67665e;border-top:1px solid #eee9dc;padding-top:14px}
+.filter-summary button{border:1px solid #d6d5cd;background:#fff;border-radius:4px;padding:7px 11px;font-size:12px}
+/* Recovery guidance panel (always visible, also on mobile). */
+.side-message.recovery{display:block}.recovery strong{margin:0 0 10px!important;font-size:14px!important}.recovery ol{margin:0 0 12px;padding-left:18px;font-size:12px;line-height:1.55;color:#6d5636}.recovery ol li{margin-bottom:6px}.recovery p{margin:0 0 6px;font-size:12px;color:#6d5636}
+.points{list-style:none;margin:0 0 12px;padding:0;font-size:12px;line-height:1.7;color:#4e3f28;font-weight:600}
+.side-actions{display:flex;flex-direction:column;align-items:flex-start;gap:2px}.side-actions button{font-size:12px!important}
+/* Cards: handover state is now a clear, colour + icon + text badge. */
+.sticky{display:flex;flex-direction:column}
+.handover{display:flex;flex-direction:column;gap:3px;border-radius:5px;padding:8px 10px;margin:0 0 12px;font-size:11px;line-height:1.4;border:1px solid}
+.handover strong{font-size:12px}.handover.held{background:#e3f4ea;border-color:#a9d6bb;color:#22553a}.handover.pending{background:#fff3df;border-color:#efc987;color:#7a4d0b}.handover.done{background:#e9eef8;border-color:#c3cfe6;color:#33476b}
+.sticky.mine{border:2px solid #262c30}.mine-badge{background:#262c30;color:#fff;border-radius:10px;padding:2px 8px;letter-spacing:.05em;font-size:9px}
+.card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.card-actions button{border:1px solid #cfc8b4;background:#fff;border-radius:4px;padding:7px 10px;font-size:12px;font-weight:600;color:#3d3a33}.card-actions button.edit{background:#262c30;color:#fff;border-color:#262c30;margin-left:auto}
+.empty-results{border:1px dashed #d8d0ba;border-radius:8px;padding:40px 20px;text-align:center;color:#7d7462}.empty-results strong{font-size:16px;color:#3d3a33}.empty-results div{display:flex;justify-content:center;gap:10px;margin-top:14px}.empty-results div>button:first-child{border:1px solid #d6d5cd;background:#fff;border-radius:5px;padding:11px 14px;font-size:12px}
+/* Form: inline errors, required marker on the same line, status-specific guidance. */
+.label-text{display:block}.label-text i{font-weight:400;font-style:normal;color:#8d8778}.req-note{font-size:11px;color:#8d8778}.req-note b{color:#b0704b}
+.form-paper input.invalid,.form-paper select.invalid,.form-paper textarea.invalid{border:2px solid #ba523e;background:#fffaf9}
+.field-error{font-size:12px;font-weight:600;color:#ba523e;line-height:1.4}.field-error::before{content:'⚠ '}
+.field-hint{font-size:12px;font-weight:400;color:#7d7462;line-height:1.4}
+.link-button{align-self:flex-start;border:0;background:none;padding:0;color:#1d5a8a;text-decoration:underline;font-size:12px;font-weight:700}
+.found-guide{background:#e3f4ea;border:1px solid #a9d6bb;border-radius:6px;padding:14px 16px;margin:-4px 0 19px;font-size:12px;line-height:1.5;color:#22553a}.found-guide ul{list-style:none;padding:0;margin:8px 0;font-weight:600}
+.header-links button:focus-visible,.card-actions button:focus-visible,.link-button:focus-visible,.filter-summary button:focus-visible{outline:2px solid #1d5a8a;outline-offset:2px}
